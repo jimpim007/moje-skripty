@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Autofill Workstation from URL
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @match        https://example.com/login*
-// @grant        none
+javascript
+// ==UserScript==
+// @name         External Script Loader
+// @match        https://example.com/*
+// @require      https://cdn.jsdelivr.net/gh/jimpim007/moje-skripty@main/WRKST.js
 // ==/UserScript==
 
 (function() {
@@ -15,4 +15,5 @@
         const input = document.querySelector('input[name="Workstation"]');
         if(input) input.value = workstation;
     }
+
 })();
